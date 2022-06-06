@@ -10,42 +10,43 @@
 </head>
 
 <body>
-    <div class="container">
+    <div>
         <ul class="header">
-            <li><a href="index.html">Main</a></li>
-            <li><a href="contacts.html">contacts</a></li>
+            <li><a href="index.html"><img src="img/logo.svg" alt="Main"></a></li>
+            <li><a href="contacts.html"><img src="img/contacts.svg" alt="Contacts"></a></li>
         </ul>
         <div class="contacts-header">
-            <h2 class="heading-contacts">Contact us</h2>
-            <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos, fuga!</p>
-            <img src="img/book.jpg" width="200" alt="img">
+            <h2 class="heading-contacts">Contact Us</h2>
+            <p class="text text_contact">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos, fuga!</p>
+
         </div>
     </div>
     <form action="#" class="container main">
         <div class="contacts-info">
-            <h4 class="heading-mini">Address</h4>
+            <img class="cont_img" src="img/cont_img.svg" height="181" alt="img">
+            <h4 class="heading-mini address2">Address</h4>
             <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, quia.</p>
-            <h4 class="heading-mini">phone</h4>
-            <ul>
-                <li>+7999999</li>
-                <li>+789889898</li>
+            <h4 class="heading-mini address">phone</h4>
+            <ul class="cont">
+                <li><img class="mini_img" src="img/phone.svg" width="18" alt="">+7999999</li>
+                <li><img class="mini_img" src="img/phone.svg" width="18" alt="">+789889898</li>
             </ul>
-            <h4 class="heading-mini">online service</h4>
-            <ul>
-                <li>geekbrains.ru</li>
-                <li>email@mail.ru</li>
+            <h4 class="heading-mini address">online service</h4>
+            <ul class="cont">
+                <li><img class="mini_img" src="img/globe.svg" width="20" alt="">geekbrains.ru</li>
+                <li><img class="mini_img" src="img/letter.svg" width="20" alt="">email@mail.ru</li>
             </ul>
         </div>
         <div class="form">
-            <h4 class="heading-mini">send us message</h4>
-            Full Name <input class="input-text" type="text"><br>
-            Email <input class="input-text" type="email"><br>
-            message <br>
-            <textarea class="input-text" cols="30" rows="10"></textarea> <br>
+            <h4 class="heading-mini address2">send us message</h4>
+            <p>Full Name</p><input class="input-text" placeholder="Your Name" type="text"><br>
+            <p>Email</p><input class="input-text" placeholder="Your Email" type="email"><br>
+            <p>Message</p>
+            <textarea class="input-text area" placeholder="Your Message" cols="30" rows="10"></textarea> <br>
             <button class="button-submit" type="submit">submit</button>
         </div>
     </form>
-    <div class="container">
+    <div class="container map">
         <script type="text/javascript" charset="utf-8" async
             src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A810734ed8b67f99256dea916a18dd1d92e5da509aac5293f0e0de65d33a7574a&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true">
 
@@ -55,19 +56,30 @@
         <div class="container">
             <div class="footer__top">
                 <div class="footer__text">
-                    <h3 class="heading">Lorem, ipsum dolor.</h3>
-                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, illo.</p>
+                    <div class="footer_left">
+                        <h3 class="footer__text footer_heading">Intersted to woek
+                            with our team?</h3>
+                        <p class="text footer__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+                            illo.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, illo. Lorem ipsum dolor sit
+                            amet consectetur adipisicing elit. Dolore, illo.
+                        </p>
+                    </div>
+                    <div class="footer_right">
+                        <a href="#" class="footer__button">Let's Talk</a>
+                    </div>
+
                 </div>
             </div>
-            <hr>
+            <hr class="hr">
             <div class="footer__bottom">
-                <ul class="footer__info">
+                <ol class="footer__info">
                     <li>Lorem ipsum dolor sit amet.</li>
                     <li>+799999999</li>
                     <li>test@test.ru</li>
-                </ul>
+                </ol>
                 <div class="footer__copy">
-                    <p class="text">Lorem, ipsum dolor.</p>
+                    <p class="text footer__text">Lorem, ipsum dolor.</p>
                 </div>
             </div>
         </div>
