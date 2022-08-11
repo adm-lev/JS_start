@@ -67,6 +67,8 @@ const listEl = document.querySelector('#list');
 const tableEl = document.querySelector('#table');
 const formEl = document.querySelector('#form ');
 const btnStartEl = document.querySelector('#btn-start');
+const btnStopEl = document.querySelector('#btn-stop');
+let curFunc = startDatas;
 
 
 
@@ -81,6 +83,7 @@ function showList(dataList, element){
             showList(i, liEl);
             ulEl.append(liEl);
         }
+        ulEl.classList.add('data');
         element.append(ulEl);
     }
 }
@@ -95,6 +98,7 @@ function showTable(data, element){
             trEl.append(tdEl);
         }
         table.append(trEl);
+        table.classList.add('data');
         element.append(table);
     }
 }
@@ -118,25 +122,31 @@ function showForm(data, element){
             }
             tagEl.setAttribute(attrib, tag[attrib]);
         }
+        form.classList.add('data');
         form.append(tagEl);
+        
     }
     element.append(form);
 }
 
-function startDatas(){
-    showList(listData, listEl);
-    showTable(tableData, tableEl);
-    showForm(formData, formEl);
+
+showList(listData, listEl);
+showTable(tableData, tableEl);
+showForm(formData, formEl);
+
+
+function startDatas () {
+    
+    const changeEls = document.querySelectorAll('.data');
+    for(const item of changeEls){
+        item.classList.toggle('hide');
+    }
+   
 }
 
 
-btnStartEl.addEventListener('cilck', startDatas);
-
-console.log(btnStartEl);
 
 
-// for(const i of formData.fieldset){
-//     console.log(i);
-// }
+btnStartEl.addEventListener('click', startDatas);
 
 
